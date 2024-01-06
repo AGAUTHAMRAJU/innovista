@@ -196,6 +196,14 @@
       font-size: 1.5rem;
     }
 
+    .pass .content {
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
     .panel p {
       font-size: 0.95rem;
       padding: 0.7rem 0;
@@ -635,7 +643,15 @@
     }
 
     .pass .content {
-      width: 100%;
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+    .pass .content {
+      width: 94%;
       padding-top: 0px;
       margin-top: 0px;
     }
@@ -655,7 +671,11 @@
 
     .content {
       position: relative;
+    }
 
+    .pass .content {
+      display: flex;
+      
     }
 
     .content .requirement-list {
@@ -665,6 +685,7 @@
       border: 0.1px solid #b3b3b3;
       border-radius: 20px;
       width: 100%;
+      max-width: 380px;
       box-shadow: -1px 0px 20px 20px rgb(134 131 131 / 17%);
       display: none;
       z-index: 1;
