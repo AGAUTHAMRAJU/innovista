@@ -1,18 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://kit.fontawesome.com/64d58efce2.js"
-      crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="icon" href="./img/innovistalogo.jpg">
-    <link rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="./img/innovistalogo.jpg">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
 
-    <title>Sign up & Login Innovista</title>
-    <style>
+  <title>Sign up & Login Innovista</title>
+  <style>
     @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
 
     * {
@@ -97,7 +95,7 @@
     .input-field i {
       text-align: center;
       line-height: 55px;
-      color: #acacac;
+      color: #000;
       transition: 0.5s;
       font-size: 1.1rem;
     }
@@ -108,12 +106,12 @@
       border: none;
       line-height: 1;
       font-weight: 600;
-      font-size: 1.1rem;
-      color: #333;
+      font-size: 1.3rem;
+      color: #000;
     }
 
     .input-field input::placeholder {
-      color: #aaa;
+      color: #656565;
       font-weight: 500;
     }
 
@@ -455,8 +453,8 @@
     .input-fields .eye {
       right: 20px;
       top: 50%;
-      font-size: 1.2rem;
-      color: #999;
+      font-size: 1.3rem;
+      color: #000;
       cursor: pointer;
       position: absolute;
       transform: translateY(-50%);
@@ -466,18 +464,25 @@
       right: 20px;
       top: 50%;
       font-size: 1.2rem;
-      color: #999;
+      color: #000;
       cursor: pointer;
       position: absolute;
       transform: translateY(-50%);
     }
 
-    .pass .content {
-      margin: 1px 0 10px;
+    .input-fieldsss .eye {
+      right: 20px;
+      top: 50%;
+      font-size: 1.2rem;
+      color: #000;
+      cursor: pointer;
+      position: absolute;
+      transform: translateY(-50%);
     }
 
+
     .pass .content p {
-      color: #333;
+      color: #000;
       font-size: 1rem;
     }
 
@@ -486,7 +491,7 @@
     }
 
     .requirement-list li {
-      font-size: 1.0rem;
+      font-size: 1.15rem;
       list-style: none;
       display: flex;
       align-items: center;
@@ -496,7 +501,7 @@
     .requirement-list li i {
       width: 20px;
       color: #ff0000;
-      font-size: 0.6rem;
+      font-size: 0.7rem;
     }
 
     .requirement-list li.valid i {
@@ -505,12 +510,12 @@
     }
 
     .requirement-list li span {
-      margin-left: 12px;
-      color: #333;
+      margin-left: 6px;
+      color: #000;
     }
 
     .requirement-list li.valid span {
-      color: #999;
+      color: #000;
     }
 
     .pass {
@@ -564,12 +569,12 @@
       border: none;
       line-height: 1;
       font-weight: 600;
-      font-size: 1.1rem;
-      color: #333;
+      font-size: 1.3rem;
+      color: #000;
     }
 
     .input-fields input::placeholder {
-      color: #aaa;
+      color: #656565;
       font-weight: 500;
     }
 
@@ -592,22 +597,47 @@
       border: none;
       line-height: 1;
       font-weight: 600;
-      font-size: 1.1rem;
-      color: #333;
+      font-size: 1.3rem;
+      color: #000;
     }
 
     .input-fieldss input::placeholder {
-      color: #aaa;
+      color: #656565;
+      font-weight: 500;
+    }
+
+    .input-fieldsss {
+      max-width: 380px;
+      width: 100%;
+      background-color: #f0f0f0;
+      margin: 10px 0;
+      height: 55px;
+      border-radius: 55px;
+      display: grid;
+      grid-template-columns: 15% 85%;
+      padding: 0 0.4rem;
+      position: relative;
+    }
+
+    .input-fieldsss input {
+      background: none;
+      outline: none;
+      border: none;
+      line-height: 1;
+      font-weight: 600;
+      font-size: 1.3rem;
+      color: #000;
+    }
+
+    .input-fieldsss input::placeholder {
+      color: #656565;
       font-weight: 500;
     }
 
     .pass .content {
-      box-shadow: -1px 0px 20px 20px rgb(171 171 171 / 20%);
-      padding: 15px;
-      border: 0.1px solid #b3b3b3;
-      background: rgb(171 171 171 / 20%);
-      color: black;
-      font-weight: 600;
+      width: 100%;
+      padding-top: 0px;
+      margin-top: 0px;
     }
 
     .pass {
@@ -618,175 +648,170 @@
       justify-content: center;
       align-items: center;
     }
-    #password-strength {
-            margin-top: 3px;
-            width:200px;
-        }
 
-        .strength-low {
-            color: red;
-        }
+    .input-fields:hover .content .requirement-list {
+      display: block;
+    }
 
-        .strength-medium {
-            color: yellow;
-        }
+    .content {
+      position: relative;
 
-        .strength-high {
-            color: green;
-        }
+    }
+
+    .content .requirement-list {
+      position: absolute;
+      left: 0;
+      background: #fff;
+      border: 0.1px solid #b3b3b3;
+      border-radius: 20px;
+      width: 100%;
+      box-shadow: -1px 0px 20px 20px rgb(134 131 131 / 17%);
+      display: none;
+      z-index: 1;
+      padding: 15px 15px 5px 15px;
+      font-weight: 600;
+      color: black;
+      margin-top: 0px;
+
+    }
   </style>
-  </head>
+</head>
 
-  <body>
+<body>
+  <div class="container">
+    <div class="forms-container">
+      <div class="signin-signup">
+        <form action="#" class="sign-in-form">
+          <h2 class="title">Login in</h2>
+          <div class="input-field">
+            <i class="fas fa-user"></i>
+            <input type="text" placeholder="Email / Roll Number" />
+          </div>
+          <div class="input-fieldss">
+            <i class="fas fa-lock"
+              style="text-align: center;line-height: 55px;color: #000; transition: 0.5s;font-size: 1.1rem;"></i>
+            <input type="password" placeholder="Enter Password">
+            <i class="fa-solid fa-eye-slash eye"></i>
+          </div>
 
-    <div class="container">
-      <div class="forms-container">
-        <div class="signin-signup">
-          <form action="#" class="sign-in-form">
-            <h2 class="title">Login in</h2>
-            <div class="input-field">
-              <i class="fas fa-user"></i>
-              <input type="text" placeholder="Email / Roll Number" />
-            </div>
-            <div class="input-fieldss">
+          <input type="submit" value="Login" class="btn solid" />
+        </form>
+
+        <form action="#" class="sign-up-form" style="overflow-y: auto;">
+          <h2 class="title">Sign up</h2>
+
+          <div class="input-field">
+            <i class="fas fa-user"></i>
+            <input type="text" placeholder="Roll Number" />
+          </div>
+          <div class="input-field">
+            <i class="fas fa-envelope"></i>
+            <input type="email" placeholder="Email" />
+          </div>
+          <div class="pass">
+            <div class="input-fields">
               <i class="fas fa-lock"
-                style="text-align: center;line-height: 55px;color: #acacac; transition: 0.5s;font-size: 1.1rem;"></i>
-              <input type="password" placeholder="Enter Password">
+                style="text-align: center;line-height: 55px;color: #000; transition: 0.5s;font-size: 1.1rem;"></i>
+              <input type="password" placeholder="Enter password">
               <i class="fa-solid fa-eye-slash eye"></i>
             </div>
-
-            <input type="submit" value="Login" class="btn solid" />
-          </form>
-
-          <form action="#" class="sign-up-form" style="overflow-y: auto;">
-            <h2 class="title">Sign up</h2>
-
-            <div class="input-field">
-              <i class="fas fa-user"></i>
-              <input type="text" placeholder="Roll Number" />
+            <div class="content">
+              <ul class="requirement-list">
+                <p style="font-size: 24px;"><b>Password must contains</b></p><br>
+                <li>
+                  <i class="fa-solid fa-circle"></i>
+                  <span>At least 8 characters length</span>
+                </li>
+                <li>
+                  <i class="fa-solid fa-circle"></i>
+                  <span>At least 1 number (0...9)</span>
+                </li>
+                <li>
+                  <i class="fa-solid fa-circle"></i>
+                  <span>At least 1 lowercase letter (a...z)</span>
+                </li>
+                <li>
+                  <i class="fa-solid fa-circle"></i>
+                  <span>At least 1 special symbol (!...$)</span>
+                </li>
+                <li>
+                  <i class="fa-solid fa-circle"></i>
+                  <span>At least 1 uppercase letter (A...Z)</span>
+                </li>
+              </ul>
             </div>
-            <div class="input-field">
-              <i class="fas fa-envelope"></i>
-              <input type="email" placeholder="Email" />
-            </div>
-
-            <style>
-              /* The message box */
-    #password-message {
-      display: none;
-      background: #ffffff;
-      color: #000;
-      position: relative;
-      padding: 20px;
-      margin-top: 10px;
-      text-align: left;
-    }
-    #password-message h3 {
-      font-size: 15px;
-      margin-top: 0;
-      text-transform: uppercase;
-    }
-    
-    #password-message p {
-      margin: 8px 0;
-    }
-    .valid {
-      color: green;
-    }
-    .valid:before {
-      position: relative;
-      left: -35px;
-      content: "✔";
-    }
-    .invalid {
-      color: red;
-    }
-    .invalid:before {
-      position: relative;
-      left: -35px;
-      content: "✖";
-    }
-    /* Error message style */
-    .error-msg {
-      color: red;
-      font-size: 14px;
-      margin-top: 4px;
-    }
-            </style>
-
-            <div class="pass">
-              <div class="input-fields">
-                <i class="fas fa-lock"
-                  style="text-align: center;line-height: 55px;color: #acacac; transition: 0.5s;font-size: 1.1rem;"></i>
-                <input type="password" type="password" id="password" name="password" pattern="/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}$/" 
-                title="Must contain at least one number, one uppercase and lowercase letter, and at least 8 characters" 
-                  placeholder="Enter password" required>
-                <i class="fa-solid fa-eye-slash eye"></i>
-
-                <div id="password-message" class="password-message"
-                style="display: none; position: absolute;
-              z-index: 3; top: 75%; left: 20%; background: #ffffff; 
-              color: #000; padding: 40px; text-align: left;">
-                <h3>Password must contain:</h3>
-                <p class="password-message-item invalid">At least <b>one
-                    lowercase letter</b></p>
-                <p class="password-message-item invalid">At least <b>one
-                    uppercase letter</b></p>
-                <p class="password-message-item invalid">At least <b>one
-                    number</b></p>
-                <p class="password-message-item invalid">Minimum <b>8
-                    characters</b></p>
-                <p class="password-message-item invalid">Minimum <b>1 Special
-                    character</b></p>
-              </div>
-
-              </div>
-            </div>
-
-
-            <div class="input-field">
-              <i class="fas fa-lock"></i>
-              <input type="password" id="password"
-                placeholder="Re-Enter Password">
-            </div>
-
-            <input type="submit" class="btn" value="Sign up" />
-          </form>
-        </div>
-      </div>
-
-      <div class="panels-container">
-        <div class="panel left-panel">
-          <div class="content">
-            <h3>New here ?</h3>
-            <p>
-              Sign up to be a participant in Innovista.in
-            </p>
-            <button class="btn transparent" id="sign-up-btn">
-              Sign up
-            </button>
           </div>
-          <img src="./img/log.svg" class="image" alt />
-        </div>
-        <div class="panel right-panel">
-          <div class="content">
-            <h3>One of us ?</h3>
-            <p>
-              Login Here
-            </p>
-            <button class="btn transparent" id="sign-in-btn">
-              Login in
-            </button>
+          <div class="input-fieldsss">
+            <i class="fas fa-lock"
+              style="text-align: center;line-height: 55px;color: #000; transition: 0.5s;font-size: 1.1rem;"></i>
+            <input type="password" id="password" placeholder="Re-Enter Password">
+            <i class="fa-solid fa-eye-slash eye"></i>
           </div>
-          <img src="./img/register.svg" class="image" alt />
-        </div>
+
+          <input type="submit" class="btn" value="Sign up" />
+        </form>
       </div>
     </div>
 
-    <script>
+    <div class="panels-container">
+      <div class="panel left-panel">
+        <div class="content">
+          <h1>New Here ?</h1>
+          <p style="font-size: 24px;">
+            Sign up to be a participant in Innovista.in
+          </p>
+          <button class="btn transparent" id="sign-up-btn">
+            Sign up
+          </button>
+        </div>
+        <img src="img/log.svg" class="image" alt />
+      </div>
+      <div class="panel right-panel">
+        <div class="content">
+          <h1>One of us ?</h1>
+          <p style="font-size: 24px;">
+            Login Here
+          </p>
+          <button class="btn transparent" id="sign-in-btn">
+            Login in
+          </button>
+        </div>
+        <img src="img/register.svg" class="image" alt />
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const passwordInput = document.querySelector(".input-fields input");
     const eyeIcon = document.querySelector(".input-fields .eye");
     const requirementList = document.querySelectorAll(".requirement-list li");
 
+    // An array of password requirements with corresponding 
+    // regular expressions and index of the requirement list item
+    const requirements = [
+      { regex: /.{8,}/, index: 0 }, // Minimum of 8 characters
+      { regex: /[0-9]/, index: 1 }, // At least one number
+      { regex: /[a-z]/, index: 2 }, // At least one lowercase letter
+      { regex: /[^A-Za-z0-9]/, index: 3 }, // At least one special character
+      { regex: /[A-Z]/, index: 4 }, // At least one uppercase letter
+    ]
+
+    passwordInput.addEventListener("keyup", (e) => {
+      requirements.forEach(item => {
+        // Check if the password matches the requirement regex
+        const isValid = item.regex.test(e.target.value);
+        const requirementItem = requirementList[item.index];
+
+        // Updating class and icon of requirement item if requirement matched or not
+        if (isValid) {
+          requirementItem.classList.add("valid");
+          requirementItem.firstElementChild.className = "fa-solid fa-check";
+        } else {
+          requirementItem.classList.remove("valid");
+          requirementItem.firstElementChild.className = "fa-solid fa-circle";
+        }
+      });
+    });
 
     eyeIcon.addEventListener("click", () => {
       // Toggle the password input type between "password" and "text"
@@ -807,7 +832,7 @@
     });
   </script>
 
-    <script>
+  <script>
     const passwordInputs = document.querySelector(".input-fieldss input");
     const eyeIcons = document.querySelector(".input-fieldss .eye");
     eyeIcons.addEventListener("click", () => {
@@ -829,63 +854,91 @@
     });
   </script>
 
-    <script>
-     function checkPasswordStrength() {
+  <script>
+    const passwordInputss = document.querySelector(".input-fieldsss input");
+    const eyeIconss = document.querySelector(".input-fieldsss .eye");
+    eyeIconss.addEventListener("click", () => {
+      // Toggle the password input type between "password" and "text"
+      passwordInputss.type = passwordInputss.type === "password" ? "text" : "password";
 
-            strengthIndicator.innerHTML = '';  // Reset the indicator
 
-            // Password strength rules (you can customize these)
-            var minLength = 8;
-            var hasUpperCase = /[A-Z]/.test(password);
-            var hasLowerCase = /[a-z]/.test(password);
-            var hasDigit = /\d/.test(password);
-            var hasSpecialChar = /[!@#$%^&*(),.?":{}|<>]/.test(password);
 
-            var strength = 0;
+      // Update the eye icon class based on the password input type
+      eyeIconss.className = `fa-solid fa-eye${passwordInputss.type === "password" ? "" : "-slash eye"}`;
+      if (passwordInputss.type === "text") {
 
-            if (password.length >= minLength) {
-                strength++;
-            }
+        eyeIconss.className = `fa-solid fa-eye eye`;
+      }       // Update the eye icon class based on the password input type
+      else {
+        eyeIconss.className = `fa-solid fa-eye-slash eye`;
+      }
 
-            if (hasUpperCase) {
-                strength++;
-            }
+    });
+  </script>
 
-            if (hasLowerCase) {
-                strength++;
-            }
 
-            if (hasDigit) {
-                strength++;
-            }
+  <script>
+    function checkPasswordStrength() {
+      var password = document.getElementById('password').value
+      var strengthIndicator = document.getElementById('password-strength');
+      var strengthBar = document.getElementById('strength-bar');
 
-            if (hasSpecialChar) {
-                strength++;
-            }
+      // Reset the indicator and strength bar
+      strengthIndicator.innerHTML = '';
+      strengthBar.style.width = '0%';
 
-            // Update the indicator with colored lines based on the password strength
-            if (strength === 0) {
-                strengthIndicator.innerHTML = 'Password is too weak.';
-                strengthIndicator.className = 'strength-low';
-            } else if (strength <= 2) {
-                strengthIndicator.innerHTML = 'Password strength: Medium';
-                strengthIndicator.className = 'strength-medium';
-            } else {
-                strengthIndicator.innerHTML = 'Password strength: Strong';
-                strengthIndicator.className = 'strength-high';
-            }
-        }
+      // Password strength rules (customize as needed)
+      var minLength = 8;
+      var hasUpperCase = /[A-Z]/.test(password);
+      var hasLowerCase = /[a-z]/.test(password);
+      var hasDigit = /\d/.test(password);
+      var hasSpecialChar = /[!@#$%^&*()_+{}\[\]:;<>,.?~\\/-]/.test(password);
+
+      var strength = 0;
+
+      if (password.length >= minLength) {
+        strength++;
+      }
+
+      if (hasUpperCase) {
+        strength++;
+      }
+
+      if (hasLowerCase) {
+        strength++;
+      }
+
+      if (hasDigit) {
+        strength++;
+      }
+
+      if (hasSpecialChar) {
+        strength++;
+      }
+
+      // Update the strength bar width and gradient
+      if (strength === 1) {
+        strengthBar.style.background = `linear-gradient(to right, red 0%, orange 100%)`;
+      } else {
+        strengthBar.style.background = `linear-gradient(to right, red 0%, green ${100 - (strength / 5) * 100}%, green 100%)`;
+      }
+
+      strengthBar.style.width = (strength / 5) * 100 + '%';
+
       // Check if passwords match for sign-up form
       if (reEnterPassword && password === reEnterPassword) {
         strengthIndicator.innerHTML = 'Passwords match';
       } else if (reEnterPassword) {
         strengthIndicator.innerHTML = 'Passwords do not match';
       }
+    }
 
 
   </script>
 
-    <script>
+
+
+  <script>
     const sign_in_btn = document.querySelector("#sign-in-btn");
     const sign_up_btn = document.querySelector("#sign-up-btn");
     const container = document.querySelector(".container");
@@ -900,76 +953,24 @@
 
   </script>
 
-    <script>
-    // script.js File 
-var passwordInput = document.getElementById("password"); 
-var passwordMessageItems = document.getElementsByClassName("password-message-item"); 
-var passwordMessage = document.getElementById("password-message"); 
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const passwordInput = document.querySelector(".input-fields input");
+      const requirementList = document.querySelector(".content .requirement-list");
 
+      // ... (your existing script)
 
-passwordInput.onfocus = function () { 
-	passwordMessage.style.display = "block"; 
-} 
+      // Event listener for password input focus
+      passwordInput.addEventListener("focus", () => {
+        requirementList.style.display = "block";
+      });
 
-// After clicking outside of password input hide the message 
-passwordInput.onblur = function () { 
-	passwordMessage.style.display = "none"; 
-} 
-
-passwordInput.onkeyup = function () { 
-	// checking uppercase letters 
-	let uppercaseRegex = /[A-Z]/g; 
-	if (passwordInput.value.match(uppercaseRegex)) { 
-		passwordMessageItems[1].classList.remove("invalid"); 
-		passwordMessageItems[1].classList.add("valid"); 
-	} else { 
-		passwordMessageItems[1].classList.remove("valid"); 
-		passwordMessageItems[1].classList.add("invalid"); 
-	} 
-
-	// checking lowercase letters 
-	let lowercaseRegex = /[a-z]/g; 
-	if (passwordInput.value.match(lowercaseRegex)) { 
-		passwordMessageItems[0].classList.remove("invalid"); 
-		passwordMessageItems[0].classList.add("valid"); 
-	} else { 
-		passwordMessageItems[0].classList.remove("valid"); 
-		passwordMessageItems[0].classList.add("invalid"); 
-	} 
-
-	// checking the number 
-	let numbersRegex = /[0-9]/g; 
-	if (passwordInput.value.match(numbersRegex)) { 
-		passwordMessageItems[2].classList.remove("invalid"); 
-		passwordMessageItems[2].classList.add("valid"); 
-	} else { 
-		passwordMessageItems[2].classList.remove("valid"); 
-		passwordMessageItems[2].classList.add("invalid"); 
-	} 
-
-    // checking special characters
-    let specialCharsRegex = /[@#$%^&+=!]/g;
-    if (passwordInput.value.match(specialCharsRegex)) {
-      passwordMessageItems[4].classList.remove("invalid");
-      passwordMessageItems[4].classList.add("valid");
-    } else {
-      passwordMessageItems[4].classList.remove("valid");
-      passwordMessageItems[4].classList.add("invalid");
-    }
-
-
-	// Checking length of the password 
-	if (passwordInput.value.length >= 8) { 
-		passwordMessageItems[3].classList.remove("invalid"); 
-		passwordMessageItems[3].classList.add("valid"); 
-	} else { 
-		passwordMessageItems[3].classList.remove("valid"); 
-		passwordMessageItems[3].classList.add("invalid"); 
-	} 
-}
-
+      // Event listener for password input blur
+      passwordInput.addEventListener("blur", () => {
+        requirementList.style.display = "none";
+      });
+    });
   </script>
-
-  </body>
+</body>
 
 </html>
